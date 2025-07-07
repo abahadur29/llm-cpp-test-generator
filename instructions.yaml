@@ -1,0 +1,33 @@
+test_cases:
+  - function: reverseNumberToWords
+    description: Converts a number to its digit words in reverse order.
+    inputs: [0]
+    expected: "ZERO"
+  - function: reverseNumberToWords
+    description: Converts a single-digit number.
+    inputs: [7]
+    expected: "SEVEN"
+  - function: reverseNumberToWords
+    description: Converts a multi-digit number.
+    inputs: [153]
+    expected: "THREE FIVE ONE"
+  - function: reverseNumberToWords
+    description: Converts a number with zero in the middle.
+    inputs: [204]
+    expected: "FOUR ZERO TWO"
+  - function: removeConsecutiveDuplicates
+    description: Handles empty string.
+    inputs: [""]
+    expected: ""
+  - function: removeConsecutiveDuplicates
+    description: Handles string with no duplicates.
+    inputs: ["abc"]
+    expected: "abc"
+  - function: removeConsecutiveDuplicates
+    description: Handles string with consecutive duplicates.
+    inputs: ["aabbcc"]
+    expected: "abc"
+  - function: removeConsecutiveDuplicates
+    description: Handles string with mixed duplicates.
+    inputs: ["aabbccddeee"]
+    expected: "abcde"

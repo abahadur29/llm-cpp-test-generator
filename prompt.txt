@@ -1,0 +1,11 @@
+You are given the following C++ functions:
+
+1. reverseNumberToWords(int number)
+   - Description: Converts an integer into its digit words in reverse order. For example, 153 becomes "THREE FIVE ONE".
+   - Edge cases: Should handle zero, single digits, and numbers with zeros in between.
+
+2. removeConsecutiveDuplicates(const std::string& input)
+   - Description: Removes consecutive duplicate characters from a string. For example, "aabbccddeee" becomes "abcde".
+   - Edge cases: Should handle empty strings and strings with no duplicates.
+
+Generate Google Test unit tests for each function, covering normal and edge cases. Each test should use EXPECT_EQ and clearly state the purpose of the test in its name.
