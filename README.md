@@ -113,7 +113,8 @@ g++ -std=c++17 functions.cpp main.cpp -o app
 ```markdown
 📷 **App Output Screenshot**
 
-![App Output](./screenshots/app_run.png)
+![App Output](<img width="947" alt="app_run" src="https://github.com/user-attachments/assets/d4c5c5a7-d3dd-48d2-8b7b-f80c0d832e76" />
+)
 
 # Build and run tests
 g++ -std=c++17 tests/test_main.cpp functions.cpp -lgtest -lgtest_main -pthread -o test_main
@@ -123,7 +124,8 @@ g++ -std=c++17 tests/test_main.cpp functions.cpp -lgtest -lgtest_main -pthread -
 ### 📷 Test Run Screenshot
 
 ```markdown
-![Test Run Output](./screenshots/test_run.png)
+![Test Run Output](<img width="709" alt="test_run" src="https://github.com/user-attachments/assets/b031aa4f-45e3-483e-9038-85210a819a20" />
+)
 ```
 
 ---
@@ -149,7 +151,8 @@ gcov test_main_cov-functions.cpp
 - **Total coverage across dependencies**: ~35.44%  
 
 ```markdown
-![Coverage Tree](./screenshots/coverage_tree.png)
+![Coverage Tree](<img width="185" alt="coverage_tree" src="https://github.com/user-attachments/assets/d9de4a42-8172-4ce1-88b9-3d65a3954cca" />
+)
 ```
 
 ---
