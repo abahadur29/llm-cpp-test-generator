@@ -96,26 +96,19 @@ ollama pull llama3
 ollama run llama3 < prompt.txt > tests/test_main.cpp
 ```
 
-### 3️⃣ Refine the Tests
-
-Send `test_main.cpp` back to the LLM with a second prompt and the YAML file:
-- Deduplicates tests  
-- Fixes includes  
-- Adds edge cases  
-- Improves assertions  
-
 ### 4️⃣ Build and Run
 
 ```bash
-# Optional: Build and run main app
+# Build and run app
 g++ -std=c++17 functions.cpp main.cpp -o app
 ./app
-```markdown
+```
+
 📷 **App Output Screenshot**
 
-![App Output](<img width="947" alt="app_run" src="https://github.com/user-attachments/assets/d4c5c5a7-d3dd-48d2-8b7b-f80c0d832e76" />
-)
+![App Output](<img width="947" alt="app_run" src="https://github.com/user-attachments/assets/ec616e07-a7d9-46a0-9432-51b2e70c28e8" />)
 
+```bash
 # Build and run tests
 g++ -std=c++17 tests/test_main.cpp functions.cpp -lgtest -lgtest_main -pthread -o test_main
 ./test_main
@@ -123,10 +116,7 @@ g++ -std=c++17 tests/test_main.cpp functions.cpp -lgtest -lgtest_main -pthread -
 
 ### 📷 Test Run Screenshot
 
-```markdown
-![Test Run Output](<img width="709" alt="test_run" src="https://github.com/user-attachments/assets/b031aa4f-45e3-483e-9038-85210a819a20" />
-)
-```
+![Test Run Output](<img width="709" alt="test_run" src="https://github.com/user-attachments/assets/a39153e7-f3d4-4017-8c93-9f6b5d29a2f7" />)
 
 ---
 
@@ -150,10 +140,8 @@ gcov test_main_cov-functions.cpp
 - **functions.cpp Coverage**: ✅ **87.5%**  
 - **Total coverage across dependencies**: ~35.44%  
 
-```markdown
-![Coverage Tree](<img width="185" alt="coverage_tree" src="https://github.com/user-attachments/assets/d9de4a42-8172-4ce1-88b9-3d65a3954cca" />
+![Coverage Tree](<img width="185" alt="coverage_tree" src="https://github.com/user-attachments/assets/8b4a9024-eaa2-4a8a-bf14-99d469e16ea6" />
 )
-```
 
 ---
 
